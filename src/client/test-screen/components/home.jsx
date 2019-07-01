@@ -12,8 +12,10 @@ export default class HomeScreen extends React.Component {
                 <BasicSegment nopadding size={150}>
                     <Listview>
                         <ListviewItem href="#/button">Button Based Screen using onClick</ListviewItem>
+                        <ListviewItem href="#/button-nohash">Button Based Screen using onClick with no hash</ListviewItem>
                         <ListviewItem href="#/list-href">List Based Screen using href</ListviewItem>
                         <ListviewItem href="#/list-onclick">List Based Screen using onClick</ListviewItem>
+                        <ListviewItem href="#/list-onclick-nohash">List Based Screen using onClick with no hash</ListviewItem>
                     </Listview>
                 </BasicSegment>
             </Page>
