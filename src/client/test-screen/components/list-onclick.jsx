@@ -14,7 +14,14 @@ export default class ListOnClickScreen extends React.Component {
                     <Padding>
                         <p>This Listview/ListviewItem uses onClick to route to the result page.</p>
                         <Listview>
-                            <ListviewItem onClick={() => router.goto("#/result")}>Go to result page</ListviewItem>
+                            <ListviewItem
+                                onClick={e => {
+                                    e.preventDefault();
+                                    router.goto("#/result");
+                                }}
+                            >
+                                Go to result page
+                            </ListviewItem>
                         </Listview>
                     </Padding>
                 </BasicSegment>
